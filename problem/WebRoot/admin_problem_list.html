@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>管理问题</title>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/admin_problem_list.js"></script>
+<style>
+.table4_2 table {
+	width:100%;
+	margin:15px 0;
+	border:0;
+}
+.table4_2 th {
+	background-color:#ACF3FF;
+	color:#000000
+}
+.table4_2,.table4_2 th,.table4_2 td {
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border-collapse:collapse;
+}
+.table4_2 th,.table4_2 td {
+	border: 1px solid #cff8fe;
+	border-width:1px 0 1px 0
+}
+.table4_2 tr {
+	border: 1px solid #cff8fe;
+}
+.table4_2 tr:nth-child(odd){
+	background-color:#e3fbfe;
+}
+.table4_2 tr:nth-child(even){
+	background-color:#fdfdfd;
+}
+</style>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="setNewProblemButtonHref()">添加一个新问题</a>
+<a href="admin_test_page_list.html">返回</a>
+<table class=table4_2>
+<tr>
+	<th>编号</th><th>问题内容</th><th>操作</th>
+</tr>
+
+</table>
+</body>
+</html>

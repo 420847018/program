@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pangu.dao.IProblemDao">
+
+	<select id="findProblemUserAnswerNum"  parameterType="long" resultType="HashMap">
+		select a.*,(select count(*) from t_user_pro_answer where answer_id=a.id_index) as num,(select count(*) from t_user_pro_answer where pro_id=a.pro_id) as count_num from t_answer a where a.pro_id=#{pro_id}
+	</select>
+</mapper>
